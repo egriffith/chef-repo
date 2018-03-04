@@ -1,7 +1,6 @@
 #
-# Cookbook:: rtorrent
+# Cookbook:: build_cookbook
 # Recipe:: default
 #
 # Copyright:: 2018, The Authors, All Rights Reserved.
-
-package 'rtorrent'
+include_recipe 'delivery-truck::default'

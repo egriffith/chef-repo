@@ -13,6 +13,11 @@
 	"recipe[epel]",
 	"recipe[mlocate]",
 	"recipe[yum-cron]",
-	"recipe[weekly-reboot]" 
+	"recipe[weekly-reboot]"
+	"recipe[ntpd-server]",
+	"recipe[dnsmasq]",
+	"recipe[mdns]",
+	"recipe[sshd_config]",
+	"recipe[auth-key]",
 	]
 }

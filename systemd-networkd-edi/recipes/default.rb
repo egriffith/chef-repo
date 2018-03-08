@@ -31,5 +31,5 @@ service 'NetworkManager' do
 end
 
 service 'systemd-networkd' do
-	action [:enable, start]
+	action [:enable, :start]
 end

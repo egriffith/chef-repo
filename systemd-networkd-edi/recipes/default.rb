@@ -9,7 +9,7 @@ package 'systemd-networkd'
 directory '/etc/systemd/network/' do
 	owner 'root'
 	group 'root'
-	mode '0744'
+	mode '0755'
 	action :create
 end
 

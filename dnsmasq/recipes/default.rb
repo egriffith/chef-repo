@@ -7,8 +7,24 @@
 package 'dnsmasq'
 package 'dnscrypt-proxy'
 
-cookbook_file '/etc/NetworkManager/conf.d/dnsmasq.conf' do
-	source 'NetworkManager-dns.conf'
+cookbook_file '/etc/dnsmasq.d/dns.conf' do
+	source 'dns.conf'
+	owner 'root'
+	group 'root'
+	mode '0644'
+	action :create
+end
+
+cookbook_file '/etc/dnsmasq.d/dhcp.conf' do
+	source 'dhcp.conf'
+	owner 'root'
+	group 'root'
+	mode '0644'
+	action :create
+end
+
+cookbook_file '/etc/dnsmasq.d/dhcp-static-leases.conf' do
+	source 'dhcp-static-leases.conf'
 	owner 'root'
 	group 'root'
 	mode '0644'

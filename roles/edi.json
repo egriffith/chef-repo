@@ -5,7 +5,10 @@
   "json_class": "Chef::Role",
   "description": "Edi's role.",
   "chef_type": "role",
-  "run_list": [ 
+  "run_list": [
+	"recipe[systemd-network-edi]",
+	"recipe[systemd-resolved]",
+	"recipe[firewalld-router-edi]",
 	"recipe[fail2ban]", 
 	"recipe[atop]",
 	"recipe[cockpit]",
@@ -20,6 +23,6 @@
 	"recipe[mdns]",
 	"recipe[auth-key]",
 	"recipe[sshd_config]",
-	"recipe[firewalld-router-edi]"
+	"recipe[tuned-edi]"
 	]
 }

@@ -9,11 +9,10 @@
 	"recipe[fail2ban]", 
 	"recipe[atop]",
 	"recipe[cockpit]",
-	"recipe[dnsmasq]",
 	"recipe[epel]",
 	"recipe[mlocate]",
 	"recipe[yum-cron]",
-	"recipe[weekly-reboot]"
+	"recipe[weekly-reboot]",
 	"recipe[ntpd-server]",
 	"recipe[dnsmasq]",
 	"recipe[mdns]",

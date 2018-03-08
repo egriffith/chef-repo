@@ -14,7 +14,7 @@
 	"recipe[yum-cron]",
 	"recipe[weekly-reboot]",
 	"recipe[chef-repo-git-sync]",
-	"recipe[chef-sync]",
+	"recipe[chef-sync-edi]",
 	"recipe[ntpd-server]",
 	"recipe[dnsmasq]",
 	"recipe[mdns]",

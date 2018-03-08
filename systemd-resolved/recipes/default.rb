@@ -12,7 +12,7 @@ end
 
 file '/etc/resolve.conf' do
 	action :delete
-	not_if { FIle.symlink?('/etc/resolv.conf') }
+	not_if { File.symlink?('/etc/resolv.conf') }
 end
 
 link '/etc/resolv.conf' do

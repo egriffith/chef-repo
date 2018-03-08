@@ -1,9 +1,9 @@
-name 'chef-sync'
+name 'chef-sync-edi'
 maintainer 'The Authors'
 maintainer_email 'you@example.com'
 license 'All Rights Reserved'
-description 'Installs/Configures chef-sync'
-long_description 'Installs/Configures chef-sync'
+description 'Installs/Configures chef-sync-edi'
+long_description 'Installs/Configures chef-sync-edi'
 version '0.1.0'
 chef_version '>= 12.1' if respond_to?(:chef_version)
 

@@ -19,7 +19,7 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[chef-sync::default]
+      - recipe[chef-sync-edi::default]
     verifier:
       inspec_tests:
         - test/smoke/default

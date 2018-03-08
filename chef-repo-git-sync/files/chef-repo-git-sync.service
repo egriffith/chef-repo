@@ -1,0 +1,7 @@
+[Unit]
+Description=Reboots the system
+
+[Service]
+Type=oneshot
+WorkingDirectory=/root/chef-cookbooks/
+ExecStart=/usr/bin/sh -c "git reset --hard && git pull"

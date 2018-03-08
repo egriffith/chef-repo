@@ -1,20 +1,19 @@
 #
-# Cookbook:: weekly-reboot
+# Cookbook:: chef-repo-git-sync
 # Recipe:: default
 #
 # Copyright:: 2018, The Authors, All Rights Reserved.
 
-
-cookbook_file '/etc/systemd/system/weekly-reboot.timer' do
-	source 'weekly-reboot.timer'
+cookbook_file '/etc/systemd/system/chef-repo-git-sync.timer' do
+	source 'chef-repo-git-sync.timer'
 	owner 'root'
 	group 'root'
 	mode '0744'
 	action :create
 end
 
-cookbook_file '/etc/systemd/system/weekly-reboot.service' do
-	source 'weekly-reboot.service'
+cookbook_file '/etc/systemd/system/chef-repo-git-sync.service' do
+	source 'chef-repo-git-sync.service'
 	owner 'root'
 	group 'root'
 	mode '0744'
@@ -25,6 +24,6 @@ execute "Reloading systemd" do
 	command "systemctl daemon-reload"
 end
 
-service 'weekly-reboot.timer' do
+service 'chef-repo-git-sync.timer' do
 	action [:enable, :start]
 end

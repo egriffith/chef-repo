@@ -17,6 +17,6 @@
 	"recipe[dnsmasq]",
 	"recipe[mdns]",
 	"recipe[sshd_config]",
-	"recipe[auth-key]",
+	"recipe[auth-key]"
 	]
 }

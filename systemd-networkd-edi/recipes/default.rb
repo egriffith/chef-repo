@@ -6,6 +6,13 @@
 
 package 'systemd-networkd'
 
+directory '/etc/systemd/network/' do
+	owner 'root'
+	group 'root'
+	mode '0744'
+	action :create
+end
+
 cookbook_file '/etc/systemd/network/enp1s0.network' do
 	source 'enp1s0.network'
 	owner 'root'

@@ -2,7 +2,7 @@
 Description=Reboot every Monday at 0300
 
 [Timer]
-OnCalendar=Mon *-*-* 03:00:00
+OnCalendar=weekly
  
 [Install]
 WantedBy=timers.target

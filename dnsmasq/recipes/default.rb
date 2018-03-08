@@ -35,6 +35,6 @@ execute 'Allow cockpit traffic' do
 	command 'firewall-cmd --zone=internal --add-service={dhcp,dhcpv6,dns} && firewall-cmd --runtime-to-permanent'
 end
 
-servide 'dnsmasq' do
+service 'dnsmasq' do
 	action [:enable, :start]
 end

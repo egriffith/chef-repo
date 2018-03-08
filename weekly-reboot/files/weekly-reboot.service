@@ -3,4 +3,4 @@ Description=Reboots the system
 
 [Service]
 Type=oneshot
-ExecStart=systemctl reboot
+ExecStart=/usr/bin/systemctl reboot

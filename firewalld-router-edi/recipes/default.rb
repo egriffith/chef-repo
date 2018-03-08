@@ -5,7 +5,7 @@
 # Copyright:: 2018, The Authors, All Rights Reserved.
 
 execute "Assign internal zone to enp2s0" do
-	command "firewall-cmd --change-inteface=enp2s0 --zone=internal"
+	command "firewall-cmd --change-interface=enp2s0 --zone=internal"
 end
 
 execute "Assign external zone to enp1s0" do

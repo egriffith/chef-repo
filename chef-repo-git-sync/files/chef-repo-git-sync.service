@@ -1,5 +1,5 @@
 [Unit]
-Description=Reboots the system
+Description=Syncs /root/chef-cookbook/ against upstream
 
 [Service]
 Type=oneshot

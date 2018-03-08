@@ -12,6 +12,10 @@ cookbook_file '/etc/ssh/sshd_config' do
 	action :create
 end
 
+execute 'Test SSH' do
+	command "sshd -t"
+end
+
 service 'sshd' do
 	action [:restart, :enable]
 end

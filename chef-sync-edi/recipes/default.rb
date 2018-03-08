@@ -25,5 +25,5 @@ execute "Reloading systemd" do
 end
 
 service 'chef-sync.timer' do
-	action [:enable, :start]
+	action [:disable, :stop]
 end

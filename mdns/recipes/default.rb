@@ -4,7 +4,7 @@
 #
 # Copyright:: 2018, The Authors, All Rights Reserved.
 
-package 'mdns'
+package 'nss-mdns'
 
 execute 'Allow cockpit traffic' do
 	command 'firewall-cmd --zone=internal --add-service=mdns && firewall-cmd --runtime-to-permanent'

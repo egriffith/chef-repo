@@ -12,6 +12,6 @@ cookbook_file '/etc/ssh/sshd_config' do
 	action :create
 end
 
-service 'ssh' do
+service 'sshd' do
 	action [:restart, :enable]
 end

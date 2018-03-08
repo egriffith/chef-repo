@@ -1,12 +1,12 @@
 {
   "name": "Edi",
-  "default_attributes": { },
+  "default_attributes": {},
   "override_attributes": { },
   "json_class": "Chef::Role",
   "description": "Edi's role.",
   "chef_type": "role",
   "run_list": [
-	"recipe[systemd-network-edi]",
+	"recipe[systemd-networkd-edi]",
 	"recipe[systemd-resolved]",
 	"recipe[firewalld-router-edi]",
 	"recipe[fail2ban]", 

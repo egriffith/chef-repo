@@ -19,6 +19,7 @@
 	"recipe[dnsmasq]",
 	"recipe[mdns]",
 	"recipe[auth-key]",
-	"recipe[sshd_config]"
+	"recipe[sshd_config]",
+	"recipe[firewalld-router-edi]"
 	]
 }

@@ -3,4 +3,8 @@ Name=enp1s0
 
 [Network]
 DHCP=ipv4
+DNS=127.0.0.1
 IPForward=yes
+
+[DHCP]
+UseDNS=false

@@ -4,7 +4,5 @@ Name=enp2s0
 [Network]
 Address=192.168.0.1/24
 DNS=127.0.0.1
-DNS=8.8.8.8
-DNS=8.8.4.4
 Domains=jestergaming.tv
 IPForward=yes

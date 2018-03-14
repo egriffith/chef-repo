@@ -1,0 +1,15 @@
+{
+  "name": "Test",
+  "default_attributes": {
+	"atop": {
+		"INTERVAL": "6000"
+	}
+},
+  "override_attributes": {},
+  "json_class": "Chef::Role",
+  "description": "Role for testing various chef things out.",
+  "chef_type": "role",
+  "run_list": [
+	"recipe[atop]"
+	]
+}

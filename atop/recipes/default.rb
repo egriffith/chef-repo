@@ -13,6 +13,7 @@ template '/etc/sysconfig/atop' do
 	owner 'root'
 	group 'root'
 	mode '0644'
+	variables({interval: node['atop']['interval']})
 end
 
 service 'atop' do

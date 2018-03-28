@@ -4,17 +4,19 @@
 #
 # Copyright:: 2018, The Authors, All Rights Reserved.
 
-directory '/home/joker/.ssh' do
-  	owner 'joker'
-  	group 'joker'
+user = node['auth_key']['user']
+
+directory '/home/#{user}/.ssh' do
+  	owner #{user}
+  	group #{user}
   	mode '0700'
   	action :create
 end
 
-cookbook_file '/home/joker/.ssh/authorized_keys' do
+cookbook_file '/home/#{user}/.ssh/authorized_keys' do
 	source 'authorized_keys'
-	owner 'joker'
-	group 'joker'
+	owner #{user}
+	group #{user}
 	mode '0700'
 	action :create
 end

@@ -6,7 +6,12 @@
 
 package 'tuned'
 
-execute "Set tuned to network-latency mode" do
-	command "tuned-adm profile network-latency"
+execute "Set tuned profile for node" do
+	command "tuned-adm profile #{node['tuned']['profile']}"
 end
+
+service 'tuned' do
+	action [:enable, :start]
+end
+
 

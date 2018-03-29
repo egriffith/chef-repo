@@ -18,4 +18,5 @@ end
 
 service 'sshd' do
 	action [:restart, :enable]
+	subscribes :reload, 'file[/etc/ssh/sshd_config]', :immediately
 end

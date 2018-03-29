@@ -1,0 +1,1 @@
+default[:mdns][:firewallzone] = 'internal'

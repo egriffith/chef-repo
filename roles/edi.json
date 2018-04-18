@@ -6,6 +6,7 @@
   "description": "Edi's role.",
   "chef_type": "role",
   "run_list": [
+  							"recipe[epel]",
 								"recipe[systemd-networkd]",
 								"recipe[systemd-networkd::edi-enp1s0]",
 								"recipe[systemd-networkd::edi-enp2s0]",
@@ -14,7 +15,6 @@
 								"recipe[fail2ban]", 
 								"recipe[atop]",
 								"recipe[cockpit]",
-								"recipe[epel]",
 								"recipe[mlocate]",
 								"recipe[yum-cron]",
 								"recipe[weekly-reboot]",

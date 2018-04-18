@@ -10,11 +10,11 @@
   "description": "Role for testing various chef things out.",
   "chef_type": "role",
   "run_list": [
+  							"recipe[epel]",
 								"recipe[firewalld-router-edi]",
 								"recipe[fail2ban]", 
 								"recipe[atop]",
 								"recipe[cockpit]",
-								"recipe[epel]",
 								"recipe[mlocate]",
 								"recipe[yum-cron]",
 								"recipe[weekly-reboot]",

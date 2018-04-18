@@ -1,6 +1,6 @@
 cookbook_path [
-               '/root/chef-cookbooks/'
+               '/root/chef/cookbooks/'
               ]
 log_location STDOUT
 rest_timeout 300
-role_path '/root/chef-cookbooks/roles'
+role_path '/root/chef/roles'

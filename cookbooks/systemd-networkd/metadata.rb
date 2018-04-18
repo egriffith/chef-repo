@@ -1,4 +1,4 @@
-name 'systemd-networkd-edi'
+name 'systemd-networkd'
 maintainer 'The Authors'
 maintainer_email 'you@example.com'
 license 'All Rights Reserved'

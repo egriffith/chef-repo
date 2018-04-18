@@ -27,7 +27,6 @@
 								"recipe[dnsmasq::pxe]",
 								"recipe[dnsmasq::adblock]",
 								"recipe[mdns]",
-								"recipe[auth-key]",
 								"recipe[sshd_config]",
 								"recipe[tuned-edi]"
 	]

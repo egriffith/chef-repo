@@ -1,4 +1,4 @@
-name 'firewalld-router'
+name 'firewalld-router-edi'
 maintainer 'The Authors'
 maintainer_email 'you@example.com'
 license 'All Rights Reserved'

@@ -1,1 +1,1 @@
-default["tuned"]["profile"] = balanced
+default["tuned"]["profile"] = "balanced"

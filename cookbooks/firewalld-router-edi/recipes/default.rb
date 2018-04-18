@@ -6,6 +6,10 @@
 
 package 'firewalld'
 
+service 'firewalld' do
+	action [:enable, :start]
+end
+
 execute "Assign internal zone to enp2s0" do
 	command "firewall-cmd --change-interface=enp2s0 --zone=internal"
 end

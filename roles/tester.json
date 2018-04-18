@@ -10,7 +10,6 @@
   "description": "Role for testing various chef things out.",
   "chef_type": "role",
   "run_list": [
-								"recipe[systemd-resolved]",
 								"recipe[firewalld-router-edi]",
 								"recipe[fail2ban]", 
 								"recipe[atop]",

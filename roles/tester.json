@@ -10,6 +10,25 @@
   "description": "Role for testing various chef things out.",
   "chef_type": "role",
   "run_list": [
-	"recipe[atop]"
+								"recipe[systemd-resolved]",
+								"recipe[firewalld-router-edi]",
+								"recipe[fail2ban]", 
+								"recipe[atop]",
+								"recipe[cockpit]",
+								"recipe[epel]",
+								"recipe[mlocate]",
+								"recipe[yum-cron]",
+								"recipe[weekly-reboot]",
+								"recipe[chef-repo-git-sync]",
+								"recipe[chef-sync-edi]",
+								"recipe[ntpd-server]",
+								"recipe[dnsmasq]",
+								"recipe[dnsmasq::dns]",
+								"recipe[dnsmasq::dhcp]",
+								"recipe[dnsmasq::pxe]",
+								"recipe[dnsmasq::adblock]",
+								"recipe[mdns]",
+								"recipe[sshd_config]",
+								"recipe[tuned-edi]"
 	]
 }

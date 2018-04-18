@@ -3,5 +3,5 @@ Description=Executes EDI's playbook
 
 [Service]
 Type=oneshot
-WorkingDirectory=/root/chef-cookbooks/
-ExecStart=/usr/bin/sh -c "chef-solo -c /root/chef-cookbooks/solo.rb -j /root/chef-cookbooks/roles/edi.json"
+WorkingDirectory=/root/chef/
+ExecStart=/usr/bin/sh -c "chef-solo -c /root/chef/solo.rb -j /root/chef/roles/edi.json"

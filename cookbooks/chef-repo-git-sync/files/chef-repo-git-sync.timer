@@ -1,5 +1,5 @@
 [Unit]
-Description=Resyncs /root/chef-cookbooks to master
+Description=Resyncs /root/chef/ to master
 
 [Timer]
 OnCalendar=*-*-* *:00:00

@@ -1,1 +1,1 @@
-default[:ntp][:firewallzone] = "internal"
+default['ntp']['firewallzone'] = 'internal'

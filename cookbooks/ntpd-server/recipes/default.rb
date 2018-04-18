@@ -7,7 +7,7 @@
 package 'ntp'
 
 execute 'Allow cockpit traffic' do
-	command 'firewall-cmd --zone=#{node[:ntp][:firewallzone]} --add-service=ntp && firewall-cmd --runtime-to-permanent'
+	command "firewall-cmd --zone=#{node['ntp']['firewallzone']} --add-service=ntp && firewall-cmd --runtime-to-permanent"
 end
 
 cookbook_file '/etc/ntp.conf' do

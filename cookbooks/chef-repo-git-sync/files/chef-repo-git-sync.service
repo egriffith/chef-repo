@@ -1,0 +1,7 @@
+[Unit]
+Description=Syncs /root/chef/ against upstream
+
+[Service]
+Type=oneshot
+WorkingDirectory=/root/chef/
+ExecStart=/usr/bin/sh -c "git reset --hard && git pull"

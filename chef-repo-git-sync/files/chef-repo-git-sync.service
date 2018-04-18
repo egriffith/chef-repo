@@ -1,7 +1,0 @@
-[Unit]
-Description=Syncs /root/chef-cookbook/ against upstream
-
-[Service]
-Type=oneshot
-WorkingDirectory=/root/chef-cookbooks/
-ExecStart=/usr/bin/sh -c "git reset --hard && git pull"

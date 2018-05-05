@@ -11,7 +11,8 @@
   "chef_type": "role",
   "run_list": [
   							"recipe[epel]",
-								"recipe[firewalld-router-edi]",
+								"recipe[firewalld]",
+								"recipe[firewalld::edi]",
 								"recipe[fail2ban]", 
 								"recipe[atop]",
 								"recipe[cockpit]",

@@ -1,1 +1,1 @@
-default[:mdns][:firewallzone] = 'internal'
+default['mdns']['firewallzone'] = 'internal'

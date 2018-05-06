@@ -8,7 +8,7 @@ cookbook_file '/etc/systemd/system/chef-sync.timer' do
 	source 'chef-sync.timer'
 	owner 'root'
 	group 'root'
-	mode '0744'
+	mode '0644'
 	action :create
 end
 
@@ -16,7 +16,7 @@ cookbook_file '/etc/systemd/system/chef-sync.service' do
 	source 'chef-sync.service'
 	owner 'root'
 	group 'root'
-	mode '0744'
+	mode '0644'
 	action :create
 end
 

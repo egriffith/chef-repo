@@ -1,9 +1,9 @@
 {
-  "name": "Edi",
+  "name": "Cortana",
   "default_attributes": {},
   "override_attributes": {},
   "json_class": "Chef::Role",
-  "description": "Edi's role.",
+  "description": "Cortana's role.",
   "chef_type": "role",
   "run_list": [
   							"recipe[epel]",
@@ -19,7 +19,7 @@
 								"recipe[yum-cron]",
 								"recipe[weekly-reboot]",
 								"recipe[chef-repo-git-sync]",
-								"recipe[chef-sync-edi]",
+								"recipe[chef-sync-cortana]",
 								"recipe[ntpd-server]",
 								"recipe[dnsmasq]",
 								"recipe[dnsmasq::dns]",

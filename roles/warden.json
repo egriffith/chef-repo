@@ -1,14 +1,14 @@
 {
-  "name": "Cortana",
+  "name": "Warden",
   "default_attributes": {
   	"adduser": {
-  		"username": "warden"
+  		"username": "cortana"
   	},
   	"tuned": {
   		"profile": "network-latency"
   	},
   	"sshd_config": {
-  		"allowedUsers": "warden"
+  		"allowedUsers": "cortana"
   	},
   	"atop": {
   		"INTERVAL": "60"
@@ -17,17 +17,17 @@
   },
   "override_attributes": {},
   "json_class": "Chef::Role",
-  "description": "Cortana's role.",
+  "description": "Warden's role.",
   "chef_type": "role",
   "run_list": [
   							"recipe[epel]",
   							"recipe[adduser::auth-key]",
 								"recipe[systemd-networkd]",
-								"recipe[systemd-networkd::cortana-enp1s0]",
-								"recipe[systemd-networkd::cortana-enp2s0]",
-								"recipe[systemd-networkd::cortana-enp3s0]",
+								"recipe[systemd-networkd::warden-enp1s0]",
+								"recipe[systemd-networkd::warden-enp2s0]",
+								"recipe[systemd-networkd::warden-enp3s0]",
 								"recipe[systemd-resolved]",
-								"recipe[firewalld::cortana]",
+								"recipe[firewalld::warden]",
 								"recipe[fail2ban]", 
 								"recipe[atop]",
 								"recipe[cockpit]",
@@ -35,7 +35,7 @@
 								"recipe[yum-cron]",
 								"recipe[weekly-reboot]",
 								"recipe[chef-repo-git-sync]",
-								"recipe[chef-sync-cortana]",
+								"recipe[chef-sync-warden]",
 								"recipe[ntpd-server]",
 								"recipe[dnsmasq]",
 								"recipe[dnsmasq::dns]",

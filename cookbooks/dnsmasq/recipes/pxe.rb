@@ -13,8 +13,8 @@ cookbook_file '/etc/dnsmasq.d/pxe.conf' do
 end
 
 directory '/srv/tftp' do
-  	owner root
-  	group root
+  	owner 'root'
+  	group 'root'
   	mode '0700'
   	action :create
 end

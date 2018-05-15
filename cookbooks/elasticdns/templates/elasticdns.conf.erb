@@ -9,7 +9,7 @@
 # Comment: An optional comment for the record update.
 # NOTE: If the comment is left blank then we will automatically set the comment to be the current date and time of the update.
 
-[<%= node[:elasticdns][:ConfigHeader] %>]
+[<%= node['elasticdns']['ConfigHeader'] %>]
 HostedZoneId =<%= node[:elasticdns][:HostedZoneId] %>
 RecordSet =<%= node[:elasticdns][:ResourceRecordSet] %>
 TTL =<%= node[:elasticdns][:TTL] %>

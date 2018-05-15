@@ -9,7 +9,7 @@ execute "Assign internal zone to internal_dev" do
 end
 
 execute "Assign external zone to external_dev" do
-	command "firewall-cmd --change-interface=#{node['firewalld']['cortana']['external_dev']} --zone=external"
+	command "firewall-cmd --change-interface=#{node['firewalld']['cortana']['external_dev']} --zone=external && firewall-cmd --zone=external --add-service=dhcpv6-client"
 end
 
 execute "Assigning internal zone to management dev" do

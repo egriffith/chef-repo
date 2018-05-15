@@ -21,9 +21,10 @@
   "run_list": [
   							"recipe[epel]",
   							"recipe[adduser::auth-key]",
-								"recipe[systemd-networkd]",
+  							"recipe[systemd-resolved]",
+								"recipe[systemd-networkd::install]",
 								"recipe[systemd-networkd::warden]",
-								"recipe[systemd-resolved]",
+								"recipe[systemd-networkd::services]",
 								"recipe[firewalld::warden]",
 								"recipe[fail2ban]", 
 								"recipe[atop]",

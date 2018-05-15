@@ -1,17 +1,8 @@
 #
 # Cookbook:: systemd-networkd-edi
-# Recipe:: default
+# Recipe:: services
 #
 # Copyright:: 2018, The Authors, All Rights Reserved.
-
-package 'systemd-networkd'
-
-directory '/etc/systemd/network/' do
-	owner 'root'
-	group 'root'
-	mode '0755'
-	action :create
-end
 
 service 'network' do
 	action [:disable, :stop]

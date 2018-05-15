@@ -12,8 +12,7 @@
   	},
   	"atop": {
   		"INTERVAL": "60"
-  	},
-  	
+  	}
   },
   "override_attributes": {},
   "json_class": "Chef::Role",

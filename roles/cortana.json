@@ -8,8 +8,8 @@
   "run_list": [
   							"recipe[epel]",
 								"recipe[systemd-networkd]",
-								"recipe[systemd-networkd::edi-enp1s0]",
-								"recipe[systemd-networkd::edi-enp2s0]",
+								"recipe[systemd-networkd::cortana-enp1s0]",
+								"recipe[systemd-networkd::cortana-enp2s0]",
 								"recipe[systemd-resolved]",
 								"recipe[firewalld-router-edi]",
 								"recipe[fail2ban]", 

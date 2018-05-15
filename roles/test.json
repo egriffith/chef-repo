@@ -1,5 +1,5 @@
 {
-  "name": "Test",
+  "name": "test",
   "default_attributes": {
 	"atop": {
 		"INTERVAL": "6000"
@@ -27,7 +27,6 @@
 								"recipe[dnsmasq::dhcp]",
 								"recipe[dnsmasq::pxe]",
 								"recipe[dnsmasq::adblock]",
-								"recipe[mdns]",
 								"recipe[sshd_config]",
 								"recipe[tuned-edi]"
 	]

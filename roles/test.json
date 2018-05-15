@@ -28,6 +28,6 @@
 								"recipe[dnsmasq::pxe]",
 								"recipe[dnsmasq::adblock]",
 								"recipe[sshd_config]",
-								"recipe[tuned-edi]"
+								"recipe[tuned]"
 	]
 }

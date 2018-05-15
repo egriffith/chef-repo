@@ -1,4 +1,4 @@
-directory '/home/#{node['adduser']['username']}/.ssh' do
+directory '/home/#{node["adduser"]["username"]}/.ssh' do
   	owner '#{node['adduser']['username']'
   	group '#{node['adduser']['username']'
   	mode '0700'

@@ -1,2 +1,2 @@
-default[:ssh][:allowedUsers] = ''
-default[:ssh][:passwordAuth] = 'no'
+default['ssh']['allowedUsers'] = ''
+default['ssh']['passwordAuth'] = 'no'

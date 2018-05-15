@@ -1,7 +1,7 @@
 [Unit]
-Description=Executes EDI's playbook
+Description=Executes Cortana's playbook
 
 [Service]
 Type=oneshot
-WorkingDirectory=/root/chef/
-ExecStart=/usr/bin/sh -c "chef-solo -c /root/chef/solo.rb -j /root/chef/roles/edi.json"
+WorkingDirectory=/root/chef-repo/
+ExecStart=/usr/bin/sh -c "chef-solo -c /root/chef-repo/solo.rb -j /root/chef-repo/solo.json"

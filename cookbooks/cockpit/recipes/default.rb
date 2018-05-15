@@ -5,7 +5,7 @@
 # Copyright:: 2018, The Authors, All Rights Reserved.
 
 #Install Cockpit and the required sub-packages
-package %w(cockpit cockpit-ws cockpit-docker cockpit-packagekit cockpit-sosreport cockpit-selinux cockpit-storaged cockpit-machines)
+package %w(cockpit cockpit-ws cockpit-docker cockpit-packagekit cockpit-selinux cockpit-storaged cockpit-machines)
 
 #Enable cockpit's socket service and start it up.
 

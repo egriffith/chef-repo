@@ -11,7 +11,7 @@
 								"recipe[systemd-networkd::cortana-enp1s0]",
 								"recipe[systemd-networkd::cortana-enp2s0]",
 								"recipe[systemd-resolved]",
-								"recipe[firewalld-router-edi]",
+								"recipe[firewalld::cortana]",
 								"recipe[fail2ban]", 
 								"recipe[atop]",
 								"recipe[cockpit]",

@@ -1,16 +1,14 @@
-user = node['adduser']['username']
-
-directory '/home/#{user}/.ssh' do
-  	owner #{user}
-  	group #{user}
+directory '/home/#{node['adduser']['username']}/.ssh' do
+  	owner '#{node['adduser']['username']'
+  	group '#{node['adduser']['username']'
   	mode '0700'
   	action :create
 end
 
-remote_file '/home/#{user}/.ssh/authorized_keys' do
+remote_file '/home/#{node[:adduser][:username]}/.ssh/authorized_keys' do
 	source 'https://github.com/egriffith.keys'
-	owner #{user}
-	group #{user}
+	owner '#{node['adduser']['username']'
+	group '#{node['adduser']['username']'
 	mode '0700'
 	action :create
 end
